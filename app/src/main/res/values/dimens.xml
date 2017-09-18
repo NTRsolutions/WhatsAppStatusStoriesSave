@@ -5,4 +5,11 @@
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="recycler_view_padding">0dp</dimen>
+    <dimen name="recycler_view_item_size">100dp</dimen>
+    <dimen name="recycler_view_item_size_px">100px</dimen>
+    <dimen name="recycler_view_item_image_select_icon_margin">0dp</dimen>
+    <dimen name="recycler_view_item_video_icon_margin">4dp</dimen>
+    <dimen name="recycler_view_item_video_icon_elevation">4dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
 </resources>

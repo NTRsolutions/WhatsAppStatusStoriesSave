@@ -1,4 +1,4 @@
-package com.thedevelopercat.whatsappstatusstoriessave;
+package com.thedevelopercat.whatsappstatussave;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

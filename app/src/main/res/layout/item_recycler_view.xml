@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WrapContent"
+    android:background="?android:attr/selectableItemBackground">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/itemImageButton"
+        style="@style/RecyclerViewItem"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/itemSelected"
+        style="@style/RecyclerViewItemSelected"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:src="@drawable/ic_video"
+        android:id="@+id/itemVideoIcon"
+        app:elevation="@dimen/recycler_view_item_video_icon_elevation"
+        style="@style/RecyclerViewItemVideoIcon"/>
+
+</RelativeLayout>

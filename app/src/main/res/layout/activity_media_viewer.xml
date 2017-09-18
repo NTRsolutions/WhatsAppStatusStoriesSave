@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    tools:activity="com.thedevelopercat.whatsappstatussave.Activities.MediaViewerActivity"
+    style="@style/MediaViewer">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        style="@style/ViewPager"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSave"
+        app:fabSize="normal"
+        style="@style/SaveFAB"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabShare"
+        app:fabSize="normal"
+        style="@style/ShareFAB"/>
+
+</RelativeLayout>

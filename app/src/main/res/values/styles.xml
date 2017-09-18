@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +18,132 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/colorPrimaryHighlight</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/recycler_view_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="RecyclerViewItem">
+        <item name="android:layout_width">@dimen/recycler_view_item_size</item>
+        <item name="android:layout_height">@dimen/recycler_view_item_size</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWidth">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RecyclerViewItemSelected" parent="WrapContent">
+        <item name="android:layout_margin">@dimen/recycler_view_item_image_select_icon_margin</item>
+        <item name="android:layout_alignRight">@id/itemImageButton</item>
+        <item name="android:layout_alignTop">@id/itemImageButton</item>
+        <item name="android:background">@color/blackOverlay</item>
+        <item name="android:layout_alignLeft">@id/itemImageButton</item>
+        <item name="android:layout_alignBottom">@id/itemImageButton</item>
+        <item name="android:clickable">false</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:alpha">0</item>
+        <item name="android:src">@drawable/ic_check_overlay</item>
+    </style>
+
+    <style name="RecyclerViewItemVideoIcon" parent="WrapContent">
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">@dimen/recycler_view_item_video_icon_margin</item>
+        <item name="android:layout_alignBottom">@id/itemImageButton</item>
+        <item name="android:layout_alignStart">@id/itemImageButton</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Fab" parent="WrapContent">
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:alpha">0</item>
+        <item name="android:src">@drawable/ic_save</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppBarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/AppTheme.AppBarOverlay</item>
+    </style>
+
+    <style name="DrawerLayout" parent="MatchParent">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="NavigationView" parent="WrapWidth">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="MediaViewer" parent="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="ViewPager" parent="WrapHeight">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="SaveFAB" parent="WrapContent">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:src">@drawable/ic_save</item>
+    </style>
+
+    <style name="ShareFAB" parent="WrapContent">
+        <item name="android:layout_alignStart">@id/fabSave</item>
+        <item name="android:layout_above">@id/fabSave</item>
+        <item name="android:layout_marginEnd">@dimen/fab_margin</item>
+        <item name="android:src">@drawable/ic_share</item>
+    </style>
+
+    <style name="MediaViewerImageView" parent="MatchParent">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:foregroundGravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
 
 </resources>

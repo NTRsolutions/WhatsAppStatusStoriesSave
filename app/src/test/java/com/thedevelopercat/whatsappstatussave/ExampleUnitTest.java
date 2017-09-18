@@ -1,4 +1,4 @@
-package com.thedevelopercat.whatsappstatusstoriessave;
+package com.thedevelopercat.whatsappstatussave;
 
 import org.junit.Test;
 
